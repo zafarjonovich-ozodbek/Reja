@@ -1,0 +1,464 @@
+/* BRR */
+.frame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #e5e5e5;
+}
+
+.frame .main_frame {
+    position: relative;
+    width: 1440px;
+    height: 1315px; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-top: 2px; */
+    background: pink;
+}
+
+.main_frame .left_frame {
+    position: relative;
+    width: 305px;
+    height: 1315px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_frame .midd_frame {
+    position: relative;
+    width: 970px;
+    height: 1315px;
+    margin-left: 30px;
+    margin-right: 27px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_frame .right_frame {
+    position: relative;
+    width: 108px;
+    height: 1315px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* =============== LEFT 1 ================== */
+
+.left_frame .left_1 {
+    position: relative;
+    width: 228px;
+    height: 267px;  
+    margin-top: 50px;
+    margin-left: 37px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.left_frame .left_1 .left_1_img {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 156.16px;
+    height: 142.53px;
+    margin-bottom: 29.46px;
+}
+
+.left_frame .left_1 .left_1_name {
+    position: relative;
+    width: 66.63px;
+    height: 20.9px;
+    margin-bottom: 6.65px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 123.6%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    color: #2b2b2b;
+}
+
+.left_frame .left_1 .left_1_subname {
+    position: relative;
+    width: 147.84px;
+    height: 25.65px;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: capitalize;
+    font-feature-settings: 'calt' off, 'kern' off;
+    color: #767676;
+}
+
+.left_1 .left_icons {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 238px;
+    margin-top: 19px;
+}
+
+.left_icons .link_href {
+    text-decoration: none;
+    color: black;
+}
+
+/* .left_icons .link_href .icon {
+    position: relative;
+    width: 24.99px;
+    height: 22.8px;
+    border-radius: 50%;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    background: #ffb400;
+} */
+
+.left_icons .link_href .icon .icon_1 {
+    position: relative;
+    left: 29.17%;
+    right: 27.08%;
+    margin-top: 5.86px;
+}
+
+.left_frame .marginer {
+    position: relative;
+    width: 220px;
+    height: 0px;
+    margin-left: 40px;
+    margin-bottom: 25px;
+    margin-top: 39px;
+    border: 1.5px solid #f0f0f6;
+}
+
+/* ================== LEFT 2 =================== */
+
+.left_frame .left_2 {
+    position: relative;
+    width: 221px;;
+    height: 126px;
+    margin-left: 44px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: aqua; */
+}
+
+.left_2 .text_yellow {
+    padding: 0px 10px 0px 5px;
+	background-color: rgba(255, 180, 0, 1);
+}
+
+.left_2 .left_2_age {
+    position: relative;
+    width: 221px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background: red; */
+}
+
+.left_2 .left_2_res {
+    position: relative;
+    width: 220px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background: red; */
+}
+ 
+.left_2 .left_2_free {
+    position: relative;
+    width: 220px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background: red; */
+}
+
+.left_2 .left_2_add {
+    position: relative;
+    width: 220px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background: red; */
+}
+
+/* ================ LEFT 3 ==================== */
+
+.left_frame .left_3 {
+    position: relative;
+    width: 220px;;
+    height: 153px;  
+    margin-top: 25px;
+    margin-left: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    /* background-color: aqua; */
+}
+
+.left_3 .languages {
+    position: relative;
+    width: 95px;
+    height: 22px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2B2B2B;
+    /* background: red; */
+}
+
+.left_3 .lang_1 {
+    position: relative;
+    width: 220px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #767676;
+    /* background-color: red; */
+}
+
+.left_3 .lang_2 {
+    position: relative;
+    width: 219px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #767676;
+    /* background-color: red; */
+}
+
+.left_3 .lang_3 {
+    position: relative;
+    width: 219px;
+    height: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #767676;
+    /* background-color: red; */
+}
+
+.left_3 .line {
+    position: relative;
+    width: 220px;
+    height: 4px;
+    margin-top: 5px;
+    background-color: #FFB400;
+    border: 1.5px solid #FFB400;
+}
+
+
+/* ============ LEFT 4 =============== */
+
+.left_frame .left_4 {
+    margin-left: 45px; 
+    position: relative;
+    width: 220px;
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.left_4 .skills {
+    position: relative;
+    width: 45px;
+    height: 22px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2B2B2B; 
+}
+
+.left_4 .skill_1 {
+    position: relative;
+    width: 220px;
+    height: 24px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #767676;
+    /* background: red; */
+}
+
+.left_4 .skill_2 {
+    position: relative;
+    width: 220px;
+    height: 24px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #767676;
+    /* background: red; */
+}
+
+.left_4 .skill_3 {
+    position: relative;
+    width: 220px;
+    height: 24px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #767676;
+    /* background: red; */
+}
+
+.left_4 .skill_4 {
+    position: relative;
+    width: 220px;
+    height: 24px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #767676;
+    /* background: red; */
+}
+
+.left_4 .skill_5 {
+    position: relative;
+    width: 220px;
+    height: 24px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #767676;
+    /* background: red; */
+}
+
+.left_4 .line {
+    position: relative;
+    width: 220px;
+    height: 4px;
+    margin-top: 5px;
+    background-color: #FFB400;
+    border: 1.5px solid #FFB400;
+} 
+
+
+/* ============== LEFT 5 ============= */
+
+.left_frame .left_5 {
+    position: relative;
+    width: 186px;;
+    height: 148px;
+    margin-top: 25px;
+    margin-left: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.left_5 .extra_skills {
+    position: relative;
+    /* width: 94px; */
+    height: 22px;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #2B2B2B;
+    /* background: red; */
+}
+
+.left_5 .ext_skill {
+    positiove: relative;
+    width: 100%;
+    height: 24px;
+    
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+}
+
+.left_5 span {
+    margin-left: 15px;
+}
+
+
+/* ============== MAIN FRAME ============ */
+
+
+
+/* ================== RIGHT FRAME ================== */
+
+.right_frame {
+	padding-top: 50px;
+}
+
+.right_icons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.right_top {
+	margin-bottom: 174px;
+	cursor: pointer;
+}
+
+.right_midd {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.right_icon {
+	margin-bottom: 43px;
+}
+
+.right_icon:hover {
+	color: rgba(255, 180, 0, 1);
+}

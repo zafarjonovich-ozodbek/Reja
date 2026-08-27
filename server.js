@@ -26,11 +26,11 @@ app.set("view engine", "ejs");
 
 // 4: routing code
 app.post("/create-item", (req, res) => {
-    console.log(req.body); 
-    res.json({ test: "success"})
+    // console.log(req.body);    
+    // res.json({ test: "success"})     
 })
 
-app.get('/author', (req, res) => {
+app.get("/author", (req, res) => {
     res.render("author", {user: user});
 });
 
