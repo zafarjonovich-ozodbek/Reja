@@ -3,16 +3,16 @@ const express = require("express");
 const res = require("express/lib/response");
 const app = express();
 const http = require("http");
-// const fs = require("fs");
+const fs = require("fs");
 
-// let user;
-// fs.readFile("database/user.json", "utf-8", (err, data) => {
-//     if(err) {
-//         console.log("ERROR:", err);
-//     } else {
-//         user = JSON.parse(data);
-//     }
-// });
+let user;
+fs.readFile("database/user.json", "utf-8", (err, data) => {
+    if(err) {
+        console.log("ERROR:", err);
+    } else {
+        user = JSON.parse(data);
+    }
+});
 
 // MongoDB chaqirish
 const db = require("./server").db();
@@ -40,9 +40,9 @@ app.post("/create-item", (req, res) => {
     // res.json({ test: "success"})     
 })
 
-// app.get("/author", (req, res) => {
-//     res.render("author", {user: user});
-// });
+app.get("/author", (req, res) => {
+    res.render("author", {user: user});
+});
 
 app.post("/delete-item", (req, res) => {
     const id = req.body.id;
