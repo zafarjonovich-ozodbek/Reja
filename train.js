@@ -1,20 +1,137 @@
+// MITASK-C:
+
+/* Shunday class tuzing nomi Shop, va uni constructoriga 3 hil mahsulot pass bolsin, 
+hamda classning 3ta methodi bolsin, biri qoldiq, biri sotish va biri qabul. Har bir method 
+ishga tushgan vaqt ham log qilinsin.
+
+MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta non,
+ 5ta lagmon va 2ta cola mavjud! shop.sotish('non', 3) & shop.qabul('cola', 
+ 4) & shop.qoldiq() return hozir 20:50da 1ta non, 5ta lagmon va 6ta cola mavjud! */
+
+//  class Shop {
+//     constructor(non, osh, somsa) {
+//         this.non = "non";
+//         this.osh = "osh";
+//         this.somsa = "somsa";
+//     }
+
+//     qoldiq() {
+//         console.log(`Xozir ${this.non}ta non, ${this.osh}ta osh, ${this.somsa}ta somsa bor!`);
+//     }
+
+//     sotish(ovqat, soni) {
+
+//         if(ovqat === "non"){
+//             this.non -= soni;
+//         } else {
+//             console.log("Non yetarli emas!")
+//         };
+
+//         if(ovqat === "osh"){
+//             this.osh -= soni;
+//         } else {
+//             console.log("Osh yetarli emas!")
+//         };
+
+//         if(ovqat === "somsa"){
+//             this.somsa -= soni;
+//         } else {
+//             console.log("Somsa yetarli emas!")
+//         };
+
+//         console.log(`${soni}ta ${ovqat} sotildi!`);             
+//     }
+//  };
+
+
+//  const menu = new Shop("non", 9);
+//  menu.qoldiq()
+//  menu.sotish("somsa", 8)
+
+
+ const moment = require("moment");
+
+class Shop {
+    constructor(non, lagmon, cola) {
+        this.non = non;
+        this.lagmon = lagmon;
+        this.cola = cola;
+    }
+
+    qoldiq() {
+        const now = moment().format("hh:mm");
+        console.log(`Xozir ${now}da ${this.non}ta non, ${this.lagmon}ta lagmon, ${this.cola}ta cola mavjud`);
+    };
+
+    sotish(name, num) {
+        if(name === "non") {
+            if(this.non >= num) {
+                this.non -= num;
+            } else {
+                console.log("Non yetarli emas!");
+            }
+        } 
+
+        if(name === "lagmon") {
+            if(this.lagmon >= num) {
+                this.lagmon -= num;
+            } else {
+                console.log("lagmon yetarli emas!");
+            }
+        } 
+
+        if(name === "cola") {
+            if(this.cola >= num) {
+                this.cola -= num;
+            } else {
+                console.log("Cola yetarli emas!");
+            }
+        } 
+
+        console.log(`${num}ta ${name} sotildi.`);
+    }
+
+    qabul(name, num) {
+        if(name === "non") {
+            this.non = this.non + num;
+        }
+
+        if(name === "lagmon") {
+            this.lagmon = this.lagmon + num;
+        }
+
+        if(name === "cola") {
+            this.cola = this.cola + num;
+        }
+
+        console.log(`${num}ta ${name} qabul qilindi.`)
+    }
+}
+
+const menu = new Shop(30, 25, 20);
+menu.qoldiq();
+menu.sotish("non", 9);
+menu.qoldiq()
+
+
+
 // // MITASK-B:
 
 // // savol: shunday function tuzing, 1ta string parametrga ega bolsin. Hamda osa stringda qatnashkan raqamlar sonini return qilsin
 
 // // yechim: 
 
-function count(password) {
-    let count = 0;
+// function count(password) {
+//     let count = 0;
 
-    for(let a = 0; a < password.length; a++) {
-        if(password[a] >= "0" && password[a] <= "9") {
-            count++
-        }
-    }
-    return count;
-}
-console.log(count("kdshufi743ydhf7934fbhdf9wid"));
+//     for(let a = 0; a < password.length; a++) {
+//         if(password[a] >= "0" && password[a] <= "9") {
+//             count++
+//         }
+//     }
+//     return count;
+// }
+// console.log(count("kdshufi743ydhf7934fbhdf9wid"));
 
 
 
