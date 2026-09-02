@@ -35,3 +35,26 @@ document.getElementById("create-form").addEventListener("submit", function(e) {
         console.log("Iltimos qaytadan xarakat qiling");
     });
 });
+
+document.addEventListener("click", function(e) {
+    // DELETE oper
+    console.log(e.target);
+    if(e.target.classList.contains("delete-me")) {
+        if(confirm("Aniq o'chirmoqchimisiz?")) {
+            axios
+            .post("/delete-item", {id: e.target.getAttribute("data-id")})
+            .then((response) => {
+                console.log(response.data);
+                e.target.parentElement.parentElement.remove();
+            })
+            .catch((err) => {
+                console.log("Iltimos qaytadan xarakat qiling");
+            });
+        }
+    }
+
+    //EDIT oper
+    if(e.target.classList.contains("edit-me")) {
+        alert("siz EDIT tugmasini bostingiz");
+    }
+});
