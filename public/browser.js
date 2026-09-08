@@ -17,12 +17,14 @@ function itemTemplate(item) {
             </li>`;
 }
 
+// STEP6: BACKENDdan FRONTENTga yetip keldi
 let createField = document.getElementById("create-field");
 
 document.getElementById("create-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-    
-    axios
+    e.preventDefault();  // TRADITIONAL API ni to'xtatish uchun. (Ya'ni 
+                         // boshqat "page"ga o'tib ketmasligi uchun)
+       
+    axios      // REST API ni ishga tushirish uchun
     .post("/create-item", { reja: createField.value })
     .then((response) => {
         document
@@ -55,6 +57,34 @@ document.addEventListener("click", function(e) {
 
     //EDIT oper
     if(e.target.classList.contains("edit-me")) {
-        alert("siz EDIT tugmasini bostingiz");
+        let userInput = prompt("O'zgartirish kiriting",       // <-- EDIT bosilganda yangi text kiritish uchun 
+            e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+        );     
+        if (userInput) {                 // O'zgartirganda INPUTdaham o'zgartirish uchun mantiq
+            axios.post("/edit-item", {
+                id: e.target.getAttribute("data-id"),
+                new_input: userInput,               // o'zgartirilgan yangi input uchun
+            }).then(response => {
+                 console.log(response.data);
+                 e.target.parentElement.parentElement.querySelector(".item-text")
+                 .innerHTML = userInput;
+            }).catch(err => {
+                console.log("Iltimos qaytadan xarakat qiling ");
+            })
+        }
     }
 });
+
+// DELETE ALL oper
+
+document.getElementById("clean_all").addEventListener("click", function(e) {
+    console.log(e.target);
+    if(confirm("Aniq o'chirmoqchimisiz?")) {
+        axios
+        .post("clean_all", {delete_all: true})
+        .then(response => {
+            alert(response.data.state);
+            document.location.reload();
+        })
+    }
+})
