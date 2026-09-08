@@ -1,3 +1,28 @@
+// MITASK-D:
+
+/* SAVOL: Shunday function tuzing, u 2ta string parametr ega bolsin, 
+hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin. 
+
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+ */
+
+const test = function(str1, str2) {
+    return str1.split('').sort().join('') == str2.split('').sort().join('');
+}
+
+console.log(test("mita8-group", "group-mita8"));   // ---> true
+console.log(test("kebab", "norin"));      // ---> false
+
+
+
+
+
+
+
+
+
+
+
 // MITASK-C:
 
 /* Shunday class tuzing nomi Shop, va uni constructoriga 3 hil mahsulot pass bolsin, 
@@ -49,69 +74,69 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 //  menu.sotish("somsa", 8)
 
 
- const moment = require("moment");
+//  const moment = require("moment");
 
-class Shop {
-    constructor(non, lagmon, cola) {
-        this.non = non;
-        this.lagmon = lagmon;
-        this.cola = cola;
-    }
+// class Shop {
+//     constructor(non, lagmon, cola) {
+//         this.non = non;
+//         this.lagmon = lagmon;
+//         this.cola = cola;
+//     }
 
-    qoldiq() {
-        const now = moment().format("hh:mm");
-        console.log(`Xozir ${now}da ${this.non}ta non, ${this.lagmon}ta lagmon, ${this.cola}ta cola mavjud`);
-    };
+//     qoldiq() {
+//         const now = moment().format("hh:mm");
+//         console.log(`Xozir ${now}da ${this.non}ta non, ${this.lagmon}ta lagmon, ${this.cola}ta cola mavjud`);
+//     };
 
-    sotish(name, num) {
-        if(name === "non") {
-            if(this.non >= num) {
-                this.non -= num;
-            } else {
-                console.log("Non yetarli emas!");
-            }
-        } 
+    // sotish(name, num) {
+    //     if(name === "non") {
+    //         if(this.non >= num) {
+    //             this.non -= num;
+    //         } else {
+    //             console.log("Non yetarli emas!");
+    //         }
+    //     } 
 
-        if(name === "lagmon") {
-            if(this.lagmon >= num) {
-                this.lagmon -= num;
-            } else {
-                console.log("lagmon yetarli emas!");
-            }
-        } 
+    //     if(name === "lagmon") {
+    //         if(this.lagmon >= num) {
+    //             this.lagmon -= num;
+    //         } else {
+    //             console.log("lagmon yetarli emas!");
+    //         }
+    //     } 
 
-        if(name === "cola") {
-            if(this.cola >= num) {
-                this.cola -= num;
-            } else {
-                console.log("Cola yetarli emas!");
-            }
-        } 
+    //     if(name === "cola") {
+    //         if(this.cola >= num) {
+    //             this.cola -= num;
+    //         } else {
+    //             console.log("Cola yetarli emas!");
+    //         }
+    //     } 
 
-        console.log(`${num}ta ${name} sotildi.`);
-    }
+    //     console.log(`${num}ta ${name} sotildi.`);
+    // }
 
-    qabul(name, num) {
-        if(name === "non") {
-            this.non = this.non + num;
-        }
+//     qabul(name, num) {
+//         if(name === "non") {
+//             this.non = this.non + num;
+//         }
 
-        if(name === "lagmon") {
-            this.lagmon = this.lagmon + num;
-        }
+//         if(name === "lagmon") {
+//             this.lagmon = this.lagmon + num;
+//         }
 
-        if(name === "cola") {
-            this.cola = this.cola + num;
-        }
+//         if(name === "cola") {
+//             this.cola = this.cola + num;
+//         }
 
-        console.log(`${num}ta ${name} qabul qilindi.`)
-    }
-}
+//         console.log(`${num}ta ${name} qabul qilindi.`)
+//     }
+// }
 
-const menu = new Shop(30, 25, 20);
-menu.qoldiq();
-menu.sotish("non", 9);
-menu.qoldiq()
+// const menu = new Shop(30, 25, 20);
+// menu.qoldiq();
+// menu.sotish("non", 9);
+// menu.qoldiq()
 
 
 
