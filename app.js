@@ -43,7 +43,6 @@ app.post("/create-item", (req, res) => {
     })   
 })
 
-
 app.post("/delete-item", (req, res) => {
     const id = req.body.id;
     db.collection("plans").deleteOne(
@@ -64,7 +63,7 @@ app.post("/edit-item", (req, res) => {
        })
 })
 
-app.post("/clean_all", (req, res) => {
+app.post("/clean-all", (req, res) => {
     if(req.body.delete_all) {
         db.collection("plans").deleteMany(function () {
             res.json({ state: "hamma rejalar o'chirildi" });

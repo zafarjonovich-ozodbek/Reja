@@ -55,7 +55,7 @@ document.addEventListener("click", function(e) {
         }
     }
 
-    //EDIT oper
+    // EDIT oper
     if(e.target.classList.contains("edit-me")) {
         let userInput = prompt("O'zgartirish kiriting",       // <-- EDIT bosilganda yangi text kiritish uchun 
             e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
@@ -77,11 +77,11 @@ document.addEventListener("click", function(e) {
 
 // DELETE ALL oper
 
-document.getElementById("clean_all").addEventListener("click", function(e) {
+document.getElementById("clean-all").addEventListener("click", function(e) {
     console.log(e.target);
     if(confirm("Aniq o'chirmoqchimisiz?")) {
         axios
-        .post("clean_all", {delete_all: true})
+        .post("clean-all", {delete_all: true})
         .then(response => {
             alert(response.data.state);
             document.location.reload();
