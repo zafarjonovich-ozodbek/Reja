@@ -1,3 +1,19 @@
+// MITASK-E:
+/* Shunday function tuzing, u bitta string argumentni qabul 
+qilib osha stringni teskari qilib return qilsin.
+ MASALAN: getReverse("hello") return qilsin "olleh" */
+
+function mit(word) {
+  return word.split("").reverse().join("");
+}
+console.log(mit("python"));
+
+//
+//
+//
+//
+//
+
 // MITASK-D:
 
 /* SAVOL: Shunday function tuzing, u 2ta string parametr ega bolsin, 
@@ -6,22 +22,12 @@ hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda fals
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
  */
 
-const test = function(str1, str2) {
-    return str1.split('').sort().join('') == str2.split('').sort().join('');
-}
+// const test = function(str1, str2) {
+//     return str1.split('').sort().join('') == str2.split('').sort().join('');
+// }
 
-console.log(test("mita8-group", "group-mita8"));   // ---> true
-console.log(test("kebab", "norin"));      // ---> false
-
-
-
-
-
-
-
-
-
-
+// console.log(test("mita8-group", "group-mita8"));   // ---> true
+// console.log(test("kebab", "norin"));      // ---> false
 
 // MITASK-C:
 
@@ -64,15 +70,13 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 //             console.log("Somsa yetarli emas!")
 //         };
 
-//         console.log(`${soni}ta ${ovqat} sotildi!`);             
+//         console.log(`${soni}ta ${ovqat} sotildi!`);
 //     }
 //  };
-
 
 //  const menu = new Shop("non", 9);
 //  menu.qoldiq()
 //  menu.sotish("somsa", 8)
-
 
 //  const moment = require("moment");
 
@@ -88,33 +92,33 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 //         console.log(`Xozir ${now}da ${this.non}ta non, ${this.lagmon}ta lagmon, ${this.cola}ta cola mavjud`);
 //     };
 
-    // sotish(name, num) {
-    //     if(name === "non") {
-    //         if(this.non >= num) {
-    //             this.non -= num;
-    //         } else {
-    //             console.log("Non yetarli emas!");
-    //         }
-    //     } 
+// sotish(name, num) {
+//     if(name === "non") {
+//         if(this.non >= num) {
+//             this.non -= num;
+//         } else {
+//             console.log("Non yetarli emas!");
+//         }
+//     }
 
-    //     if(name === "lagmon") {
-    //         if(this.lagmon >= num) {
-    //             this.lagmon -= num;
-    //         } else {
-    //             console.log("lagmon yetarli emas!");
-    //         }
-    //     } 
+//     if(name === "lagmon") {
+//         if(this.lagmon >= num) {
+//             this.lagmon -= num;
+//         } else {
+//             console.log("lagmon yetarli emas!");
+//         }
+//     }
 
-    //     if(name === "cola") {
-    //         if(this.cola >= num) {
-    //             this.cola -= num;
-    //         } else {
-    //             console.log("Cola yetarli emas!");
-    //         }
-    //     } 
+//     if(name === "cola") {
+//         if(this.cola >= num) {
+//             this.cola -= num;
+//         } else {
+//             console.log("Cola yetarli emas!");
+//         }
+//     }
 
-    //     console.log(`${num}ta ${name} sotildi.`);
-    // }
+//     console.log(`${num}ta ${name} sotildi.`);
+// }
 
 //     qabul(name, num) {
 //         if(name === "non") {
@@ -138,13 +142,11 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 // menu.sotish("non", 9);
 // menu.qoldiq()
 
-
-
 // // MITASK-B:
 
 // // savol: shunday function tuzing, 1ta string parametrga ega bolsin. Hamda osa stringda qatnashkan raqamlar sonini return qilsin
 
-// // yechim: 
+// // yechim:
 
 // function count(password) {
 //     let count = 0;
@@ -157,13 +159,6 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 //     return count;
 // }
 // console.log(count("kdshufi743ydhf7934fbhdf9wid"));
-
-
-
-
-
-
-
 
 ////////// LESSON: 21 && 22
 
@@ -206,7 +201,6 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 //     }
 // });
 // console.log("passed here 1");
-
 
 // // //////// ASYNC function
 // // async function maslahatBering(a) {
